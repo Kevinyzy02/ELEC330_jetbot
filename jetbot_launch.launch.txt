@@ -1,0 +1,25 @@
+<launch>
+  <!-- IMU Data Reader Node -->
+  <node name="imu_reader" pkg="jetbot_ros" type="imu_reader.py" output="screen"/>
+
+  <!-- ToF Sensor Reader Node -->
+  <node name="tof_reader" pkg="jetbot_ros" type="tof_reader.py" output="screen"/>
+
+  <!-- Encoder Data Reader Node -->
+  <node name="encoder_reader" pkg="jetbot_ros" type="encoder_reader.py" output="screen"/>
+
+  <!-- Camera Data Stream Node -->
+  <node name="camera_stream" pkg="jetbot_ros" type="camera_stream.py" output="screen"/>
+
+  <!-- Object Detector Node -->
+  <node name="object_detector" pkg="jetbot_ros" type="object_detector.py" output="screen"/>
+
+  <!-- Motor Controller Node -->
+  <node name="motor_controller" pkg="jetbot_ros" type="motor_controller.py" output="screen"/>
+
+  <!-- Navigation Node -->
+  <node name="navigation_node" pkg="jetbot_ros" type="navigation_node.py" output="screen"/>
+
+  <!-- Robot Controller Node -->
+  <node name="robot_controller" pkg="jetbot_ros" type="robot_controller.py" output="screen"/>
+</launch>
